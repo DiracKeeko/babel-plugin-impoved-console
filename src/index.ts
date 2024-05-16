@@ -11,10 +11,8 @@ const _generate = (
 
 function generateStrNode(str: string): StringLiteral & { skip: boolean } {
   const node = stringLiteral(str)
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
   node.skip = true
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
   return node
 }
@@ -36,7 +34,7 @@ export interface IBabelPluginImprovedConsole {
 }
 
 const BabelPluginImprovedConsole = declare<IBabelPluginImprovedConsole>(
-  (babel, { tip = '↓======↓', root = process.cwd() }) => {
+  (babel, { tip = '↓', root = process.cwd() }) => {
     const { types: t } = babel
     const rootReg = new RegExp(`${root}\\/?`)
     // 提示行数的文本

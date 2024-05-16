@@ -23,7 +23,8 @@
   "license": "MIT",
   "dependencies": {
     "@babel/generator": "7.21.4",
-    "@babel/helper-plugin-utils": "7.20.2"
+    "@babel/helper-plugin-utils": "7.20.2",
+    "tsup": "7.1.0"
   },
   "devDependencies": {
     "@babel/core": "7.21.4",
@@ -33,6 +34,10 @@
     "@types/babel__generator": "7.6.4",
     "@types/babel__helper-plugin-utils": "7.10.0",
     "@types/node": "18.15.13",
-    "tsup": "7.2.0"
+    "typescript": "4.9.5"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
   }
 }
